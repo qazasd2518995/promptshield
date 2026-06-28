@@ -1,0 +1,46 @@
+# --- Secrets (NEVER commit) ---
+.env
+.env.local
+*.key
+secrets/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Data / models / cache ---
+*.sqlite3
+*.db
+.chroma/
+chroma_db/
+.cache/
+data/raw/
+uploads/
+*.wav
+*.mp3
+*.m4a
+!samples/*.wav
+!samples/*.mp3
+
+# --- OS / IDE ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+Thumbs.db
