@@ -44,7 +44,7 @@ def main(argv: list[str] | None = None) -> None:
         }, indent=2))
     else:
         color = _COLORS[r.verdict]
-        print(f"{color}● {r.verdict.value.upper()}{_RESET}  risk={r.risk}")
+        print(f"{color}{r.verdict.value.upper()}{_RESET}  risk={r.risk}")
         print(f"  classifier: {r.classifier_score}   heuristics: {r.heuristic_score}")
         if r.heuristic_hits:
             print("  matched rules:")
